@@ -1,0 +1,75 @@
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin: 0;
+  background-color: aquamarine;
+  color: blue;
+}
+/* Top Bar */
+.upperBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(91, 161, 170);
+  padding: 5px 15px;
+  color: azure;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+.upperBar a {
+  color: white;
+  text-decoration: none;
+  margin: 0%;
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  border-bottom: 1px solid whitesmoke;
+}
+.logo {
+  margin: 0%;
+  color: mediumblue;
+}
+.search-bar input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.search-bar button {
+  border: none;
+  background-color: rgb(117, 223, 250);
+  color: aliceblue;
+}
+main {
+  display: flex;
+  padding: 30px;
+}
+/*Sidebar*/
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar a {
+  background-color: cornsilk;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*Product Selection*/
+.products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20%;
+  padding-left: 20px;
+}
+.product-card {
+  background-color: beige;
+  padding: 15px;
+  border: 1px solid wheat;
+}
+.product-card img {
+  width: 50%;
+  height: auto;
+}
