@@ -2,7 +2,7 @@ body {
   font-family: "Trebuchet MS", Arial, sans-serif;
   margin: 0;
   background-color: aquamarine;
-  color: blue;
+  color: rgb(6, 6, 14);
 }
 /* Top Bar */
 .upperBar {
@@ -58,9 +58,8 @@ main {
 }
 /*Product Selection*/
 .products {
-  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   padding-left: 20px;
 }
@@ -69,8 +68,33 @@ main {
   padding: 15px;
   border: 2px solid seagreen;
   border-radius: 10px;
+  display: grid;
+  grid-area: ;
 }
 .product-card img {
   width: 50%;
   height: auto;
+}
+.price-row {
+  display: grid;
+  margin: 0%;
+  justify-items: center;
+  align-items: end;
+}
+.price-row button {
+  font-size: large;
+}
+
+.footerContainer {
+  background-color: rgb(141, 20, 165);
+}
+.footer {
+  height: 10vh;
+  background-color: rgb(141, 20, 165);
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
 }
